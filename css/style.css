@@ -1,0 +1,33 @@
+/* --------------------------BODY-------------------------- */
+
+body {
+    background-color: #2f5691;
+    color: #bde8fd;
+}
+
+/* --------------------------NAVBAR-------------------------- */
+
+.navbar {
+    background-color: #fffdfd !important;
+}
+
+.nav-link {
+    color: #2f5691;
+}
+
+.nav-link:hover {
+    color: #a1e557;
+}
+
+.boton_nav_descarga {
+    background-color: #2f5691;
+    color: #a1e557;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.boton_nav_descarga:hover {
+    background-color: #a1e557;
+    color: #2f5691;
+}
+
