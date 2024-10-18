@@ -31,11 +31,31 @@ body {
     color: #2f5691;
 }
 
+/* --------------------------CERTIFICADOS Y SEGURIDAD-------------------------- */
+
+.certificados_seguridad{
+    background-color: #fffdfd;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.h3_certificados_seguridad{
+    color: #2f5691;
+}
+
+.imgCertificado{
+    max-width: 30%;
+    height: auto;
+}
+
+.p_certificados_seguridad{
+    color: #2f5691;
+}
+
+
+/* --------------------------DESCARGA APP-------------------------- */
 
 .imgDescarga{
     width: 100%;
-}
-
-.imgSupport{
-    
 }
