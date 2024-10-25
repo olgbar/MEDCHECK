@@ -44,10 +44,6 @@ body {
     text-align: center;
 }
 
-.h3_certificados_seguridad{
-    color: #2f5691;
-}
-
 .p_certificados_seguridad{
     color: #2f5691;
 }
@@ -55,9 +51,4 @@ body {
 .imgCertificado{
     max-width: 30%;
     height: auto;
-}
-/* --------------------------DESCARGA APP-------------------------- */
-
-.imgDescarga{
-    width: 100%;
 }
