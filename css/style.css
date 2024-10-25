@@ -15,20 +15,26 @@ body {
     color: #2f5691;
 }
 
-.nav-link:hover {
+.nav-link:hover { /*cambia el color de las palabras al pasar el cursor sobre ellas*/
     color: #a1e557;
 }
 
-.boton_nav_descarga {
+.boton_nav_descarga { 
     background-color: #2f5691;
     color: #a1e557;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-.boton_nav_descarga:hover {
+.boton_nav_descarga:hover { /*cambia el aspecto del boton al pasar el cursor sobre él*/
     background-color: #a1e557;
     color: #2f5691;
+}
+
+@media (max-width: 433px){ /*de este modo el boton navbar-toggler se mantiene en linea con el logo*/
+    .navbar-toggler{
+        margin-left: -25%;
+    }
 }
 
 /* --------------------------CERTIFICADOS Y SEGURIDAD-------------------------- */
