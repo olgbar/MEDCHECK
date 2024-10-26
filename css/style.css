@@ -12,7 +12,9 @@ body {
 }
 
 .nav-link {
-    color: #2f5691;
+    color: #fafafa;
+    background: #2f5691;
+    border-radius: 0.25rem;
 }
 
 .nav-link:hover { /*cambia el color de las palabras al pasar el cursor sobre ellas*/
@@ -35,6 +37,13 @@ body {
     .navbar-toggler{
         margin-left: -25%;
     }
+}
+
+.espaciador::before {  /*arregla el problema de los titulos con el navbar*/
+  content: "";
+  display: block;
+  height: 88.25px; /* Ajusta la altura según la navbar */
+  margin-top: -60px;
 }
 
 /* --------------------------CERTIFICADOS Y SEGURIDAD-------------------------- */
