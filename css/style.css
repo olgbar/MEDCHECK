@@ -7,9 +7,9 @@ body {
 
 /* --------------------------NAVBAR-------------------------- */
 
-.navbar {
+/* .navbar {
     background-color: #fffdfd !important;
-}
+} */
 
 .nav-link {
     color: #fafafa;
@@ -33,6 +33,11 @@ body {
     color: #2f5691;
 }
 
+.hero {
+    padding: 0; /* Elimina el padding del contenedor de la sección */
+    margin: 0;  /* Elimina el margen de la sección */
+}
+
 @media (max-width: 433px){ /*de este modo el boton navbar-toggler se mantiene en linea con el logo*/
     .navbar-toggler{
         margin-left: -25%;
@@ -44,6 +49,24 @@ body {
   display: block;
   height: 88.25px; /* Ajusta la altura según la navbar */
   margin-top: -60px;
+}
+
+.bg-imagen{   /*imagen fija de fondo*/
+    background-image: url('/img/bg02.jpg') !important;
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed;
+    width: 100vw;               
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+.bg-blur{   /*desenfoque en el fondo*/
+    background-color: #2f5691;
+    /* backdrop-filter: blur(8px); */
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 10px 10px 20px 0.5px #2f5691;
 }
 
 /* --------------------------CERTIFICADOS Y SEGURIDAD-------------------------- */
