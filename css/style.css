@@ -4,6 +4,9 @@ body {
     background-color: #2f5691;
     color: #fafafa;
 }
+.color-text {
+     color: #2f5691;
+}
 
 /* --------------------------NAVBAR-------------------------- */
 
@@ -12,20 +15,19 @@ body {
 } */
 
 .nav-link {
-    color: #fafafa;
-    background: #2f5691;
+    color: #2f5691;
     border-radius: 0.25rem;
 }
 
 .nav-link:hover { /*cambia el color de las palabras al pasar el cursor sobre ellas*/
     color: #a1e557;
+    background: #2f5691;
 }
 
 .boton_nav_descarga { 
     background-color: #2f5691;
     color: #a1e557;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0px 50px;
 }
 
 .boton_nav_descarga:hover { /*cambia el aspecto del boton al pasar el cursor sobre él*/
@@ -44,10 +46,11 @@ body {
     }
 }
 
+
 .espaciador::before {  /*arregla el problema de los titulos con el navbar*/
   content: "";
   display: block;
-  height: 88.25px; /* Ajusta la altura según la navbar */
+  height: 88.25px;  /* Ajusta la altura según la navbar */
   margin-top: -60px;
 }
 
@@ -66,7 +69,12 @@ body {
     /* backdrop-filter: blur(8px); */
     border-radius: 20px;
     width: 100%;
-    box-shadow: 10px 10px 20px 0.5px #2f5691;
+    box-shadow: 5px 5px 20px 0.5px #2f5691;
+}
+
+
+#contacto {
+    background-color: #2f5691;
 }
 
 /* --------------------------CERTIFICADOS Y SEGURIDAD-------------------------- */
@@ -81,6 +89,6 @@ body {
 }
 
 .imgCertificado{
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
 }
