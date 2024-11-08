@@ -35,16 +35,19 @@ body {
     color: #2f5691;
 }
 
-.hero {
-    padding: 0; /* Elimina el padding del contenedor de la sección */
-    margin: 0;  /* Elimina el margen de la sección */
-}
-
 @media (max-width: 433px){ /*de este modo el boton navbar-toggler se mantiene en linea con el logo*/
     .navbar-toggler{
         margin-left: -25%;
     }
 }
+
+/* --------------------------CARRUSEL-------------------------- */
+
+.hero {
+    padding: 0; /* Elimina el padding del contenedor de la sección */
+    margin: 0;  /* Elimina el margen de la sección */
+}
+
 
 
 .espaciador::before {  /*arregla el problema de los titulos con el navbar*/
@@ -54,12 +57,15 @@ body {
   margin-top: -60px;
 }
 
+/* --------------------------FONDO-------------------------- */
+
+
 .bg-imagen{   /*imagen fija de fondo*/
     background-image: url('/img/bg02.jpg') !important;
     background-size: cover;       
     background-position: center;  
     background-attachment: fixed;
-    width: 100vw;               
+    width: 100%;               
     /* padding-top: 50px;
     padding-bottom: 50px; */
 }
@@ -72,6 +78,7 @@ body {
     box-shadow: 5px 5px 20px 0.5px #2f5691;
 }
 
+/* --------------------------CONTACTO-------------------------- */
 
 #contacto {
     background-color: #2f5691;
