@@ -10,9 +10,7 @@ body {
 
 /* --------------------------NAVBAR-------------------------- */
 
-/* .navbar {
-    background-color: #fffdfd !important;
-} */
+
 
 .nav-link {
     color: #2f5691;
@@ -46,6 +44,13 @@ body {
     
 }
 
+/*SCROLL*/
+@media (max-width: 992px){
+    #quienesSomos, #servicios, #reviews, #contacto {
+        scroll-margin-top: 300px; /* Ajusta este valor según la altura de tu header */
+    }
+}
+
 /* --------------------------CARRUSEL-------------------------- */
 
 .hero {
@@ -71,8 +76,6 @@ body {
     background-position: center;  
     background-attachment: fixed;
     width: 100%;               
-    /* padding-top: 50px;
-    padding-bottom: 50px; */
 }
 
 .bg-blur{   /*desenfoque en el fondo*/
