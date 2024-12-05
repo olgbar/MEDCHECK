@@ -165,7 +165,7 @@
                             stroke="bold" colors="primary:#a1e557,secondary:#2f5691" style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Uno</p>
-                        <p class="card-text fs-6 fw-light">This is a longer card with supporting text below as a natural
+                        <p class="card-text fs-6 fw-normal">This is a longer card with supporting text below as a natural
                             lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                             stroke="bold" colors="primary:#a1e557,secondary:#2f5691" style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Dos</p>
-                        <p class="card-text fs-6 fw-light">This is a card. Lorem ipsum dolor sit amet consectetur
+                        <p class="card-text fs-6 fw-normal">This is a card. Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Ratione quam labore architecto tempore odit.</p>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                             style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Tres</p>
-                        <p class="card-text fs-6 fw-light">This is a longer card with supporting text below as a natural
+                        <p class="card-text fs-6 fw-normal">This is a longer card with supporting text below as a natural
                             lead-in to additional
                             content.</p>
                     </div>
@@ -204,7 +204,7 @@
                             style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Cuatro</p>
-                        <p class="card-text fs-6 fw-light">This is a longer card with supporting text below as a natural
+                        <p class="card-text fs-6 fw-normal">This is a longer card with supporting text below as a natural
                             lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                             stroke="bold" colors="primary:#a1e557,secondary:#2f5691" style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Cinco</p>
-                        <p class="card-text fs-6 fw-light">This is a longer card with supporting text below as a natural
+                        <p class="card-text fs-6 fw-normal">This is a longer card with supporting text below as a natural
                             lead-in to additional
                             content. This content is a little bit longer.</p>
                     </div>
@@ -229,7 +229,7 @@
                             stroke="bold" colors="primary:#a1e557,secondary:#2f5691" style="width:70px;height:70px">
                         </lord-icon>
                         <p class="card-title h5 fw-bold">Característica Seis</p>
-                        <p class="card-text fs-6 fw-light">This is a longer card with supporting text below as a natural
+                        <p class="card-text fs-6 fw-normal">This is a longer card with supporting text below as a natural
                             lead-in to additional
                             content. This content is a little bit longer.</p>
                     </div>
@@ -372,15 +372,17 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-8">
                     <p class="h1 pb-5 text-center">Contáctenos</p>
-                    <form>
+                    <form id="Form">
                         <div class="row mb-3">
                             <div class="col-md-6 col-sm-12">
                                 <label for="name" class="form-label">Nombre </label>
                                 <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                                <div id="nameError" class="error text-danger"></div>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <label for="surname" class="form-label">Apellido </label>
                                 <input type="text" class="form-control" id="surname" placeholder="Tu apellido">
+                                <div id="surnameError" class="error text-danger"></div>
                             </div>
                         </div>
 
@@ -389,6 +391,7 @@
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="name@example.com">
                             <div id="emailHelp" class="form-text text-white fst-italic">Nunca compartiremos tu email.</div>
+                            <div id="emailError" class="error text-danger"></div>
                         </div>
 
                         <div class="row mb-3">
@@ -396,43 +399,47 @@
                                 <label for="codigoarea" class="form-label">Codigo de Area</label>
                                 <select class="form-select" name="codigoarea" id="codigoarea">
                                     <option value="seleccion" selected> -seleccionar- </option>
-                                    <option value="arg"> + 54 </option>
-                                    <option value="ch"> + 34 </option>
-                                    <option value="eeuu"> + 1 </option>
-                                    <option value="bl"> + 25 </option>
+                                    <option value="011">Buenos Aires (+54 11)</option>
+                                    <option value="351">Córdoba (+54 351) </option>
+                                    <option value="341">Rosario (+54 341)</option>
+                                    <option value="261">Mendoza (+54 261)</option>
                                 </select>
+                                <div id="codigoareaError" class="error text-danger"></div>
                             </div>
                             <div class="col-md-8 col-sm-12">
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Teléfono </label>
-                                    <input type="" class="form-control" id="telefono">
+                                    <input type="text" class="form-control" id="telefono">
+                                    <div id="telefonoError" class="error text-danger"></div>
                                 </div>
                             </div>
 
                         </div>
                         <div class="form-check mb-3">
                             <p class="fw-bold">Dejanos tu consulta.</p>
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
+                            <input class="form-check-input" type="radio" name="opcionRadio" id="personalRadio">
+                            <label class="form-check-label" for="personalRadio">
                                 Personal
                             </label>
                         </div>
                         <div class="form-check mb-3">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
-                                checked>
-                            <label class="form-check-label" for="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="opcionRadio" id="appRadio">
+                            <label class="form-check-label" for="appRadio">
                                 Sobre la App
                             </label>
+                            <div id="opcionRadioError" class="error text-danger"></div>
                         </div>
                         <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                 style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Dejanos tu comentario.</label>
+                            <div id="floatingTextarea2Error" class="error text-danger"></div>
                         </div>
 
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Enviar comprobante</label>
+                            <div id="exampleCheck1Error" class="error text-danger"></div>
                         </div>
                         <button type="submit" class="btn btn-primary" id="btnSubmit">Enviar</button>
                     </form>
