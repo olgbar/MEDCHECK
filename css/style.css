@@ -83,6 +83,17 @@ body {
     box-shadow: 5px 5px 20px 0.5px #2f5691;
 }
 
+
+
+.boton_sec_descarga{
+    background-color: #2f5691;
+    color: #a1e557;
+}
+
+.boton_sec_descarga:hover{
+    background-color: #a1e557;
+    color: #2f5691;
+}
 /* --------------------------CONTACTO-------------------------- */
 
 #contacto {
