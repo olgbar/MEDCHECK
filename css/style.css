@@ -17,17 +17,21 @@ body {
 .nav-link {
     color: #2f5691;
     border-radius: 0.25rem;
+    background-color: #a1e557;
+    margin: 2%;
 }
 
 .nav-link:hover { /*cambia el color de las palabras al pasar el cursor sobre ellas*/
     color: #a1e557;
     background: #2f5691;
+    
 }
 
 .boton_nav_descarga { 
     background-color: #2f5691;
     color: #a1e557;
-    margin: 0px 0px;
+    margin: 2%;
+
 }
 
 .boton_nav_descarga:hover { /*cambia el aspecto del boton al pasar el cursor sobre él*/
@@ -39,6 +43,7 @@ body {
     .navbar-toggler{
         margin-left: -25%;
     }
+    
 }
 
 /* --------------------------CARRUSEL-------------------------- */
