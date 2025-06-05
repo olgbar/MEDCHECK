@@ -71,7 +71,7 @@ body {
 
 
 .bg-imagen{   /*imagen fija de fondo*/
-    background-image: url('img/bg02.jpg') !important;
+    background-image: url('../img/bg02.jpg') !important;
     background-size: cover;       
     background-position: center;  
     background-attachment: fixed;
